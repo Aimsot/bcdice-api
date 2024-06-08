@@ -2,16 +2,12 @@
   "version": 2,
   "builds": [
     {
-      "src": "bcdice",
-      "use": "@vercel/static"
-    },
-    {
       "src": "config.ru",
       "use": "@vercel/ruby"
     }
   ],
   "routes": [
-    { "src": "/bcdice/(.*)", "dest": "/bcdice/$1" },
+    { "src": "/bcdice/(.*)", "dest": "/bcdice/" },
     { "src": "/(.*)", "dest": "config.ru" }
   ]
 }
