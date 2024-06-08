@@ -6,8 +6,5 @@
       "use": "@vercel/ruby"
     }
   ],
-  "routes": [
-    { "src": "/bcdice/(.*)", "dest": "/bcdice/" },
-    { "src": "/(.*)", "dest": "config.ru" }
-  ]
+  "routes": [{ "src": "/(.*)", "dest": "config.ru" }]
 }
