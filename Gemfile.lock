@@ -1,27 +1,31 @@
+PATH
+  remote: bcdice
+  specs:
+    bcdice (3.13.0)
+      i18n (~> 1.8.5)
+      racc (~> 1.7.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
     base64 (0.2.0)
-    bcdice (3.13.0)
-      i18n (~> 1.8.5)
-      racc (~> 1.7.3)
-    concurrent-ruby (1.2.3)
+    concurrent-ruby (1.3.2)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
-    nio4r (2.7.0)
+    nio4r (2.7.3)
     parallel (1.24.0)
-    parser (3.3.0.5)
+    parser (3.3.2.0)
       ast (~> 2.4.1)
       racc
     power_assert (2.0.3)
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.3)
-    rack (3.0.9)
+    rack (3.0.11)
     rack-protection (4.0.0)
       base64 (>= 0.1.0)
       rack (>= 3.0.0, < 4)
@@ -33,9 +37,10 @@ GEM
       rack (>= 3)
       webrick (~> 1.8)
     rainbow (3.1.1)
-    rake (13.1.0)
-    regexp_parser (2.9.0)
-    rexml (3.2.6)
+    rake (13.2.1)
+    regexp_parser (2.9.2)
+    rexml (3.2.8)
+      strscan (>= 3.0.9)
     rubocop (1.15.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
@@ -45,8 +50,8 @@ GEM
       rubocop-ast (>= 1.5.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.30.0)
-      parser (>= 3.2.1.0)
+    rubocop-ast (1.31.3)
+      parser (>= 3.3.1.0)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     sinatra (4.0.0)
@@ -61,7 +66,8 @@ GEM
       rack-protection (= 4.0.0)
       sinatra (= 4.0.0)
       tilt (~> 2.0)
-    test-unit (3.6.1)
+    strscan (3.1.0)
+    test-unit (3.6.2)
       power_assert
     tilt (2.3.0)
     tomlrb (2.0.3)
@@ -69,10 +75,10 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
-  ruby
+  x86-mingw32
 
 DEPENDENCIES
-  bcdice (~> 3.0)
+  bcdice!
   puma (~> 6.4)
   rack-test (~> 2.1.0)
   rackup (~> 2.1)
@@ -83,8 +89,5 @@ DEPENDENCIES
   test-unit (~> 3.3)
   tomlrb
 
-RUBY VERSION
-   ruby 3.2.2p53
-
 BUNDLED WITH
-   2.3.9
+   2.5.7

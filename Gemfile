@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby "~> 3.2.x"
 
-gem 'bcdice', '~>3.0'
+gem 'bcdice', :path => 'bcdice'
 
 gem 'sinatra', '~>4.0'
 gem 'sinatra-contrib', '~>4.0'
