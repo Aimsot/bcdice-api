@@ -1,3 +1,6 @@
 [submodule "bcdice"]
 	path = bcdice
 	url = https://github.com/bcdice/BCDice
+[submodule "src/bcdice"]
+	path = src/bcdice
+	url = https://github.com/username/bcdice.git
