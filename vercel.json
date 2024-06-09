@@ -6,5 +6,9 @@
       "use": "@vercel/ruby"
     }
   ],
-  "routes": [{ "src": "/(.*)", "dest": "config.ru" }]
+
+  "routes": [
+    { "src": "/favicon.ico", "dest": "/public/favicon.ico" },
+    { "src": "/(.*)", "dest": "config.ru" }
+  ]
 }
