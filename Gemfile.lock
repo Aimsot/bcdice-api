@@ -1,7 +1,7 @@
 PATH
   remote: bcdice
   specs:
-    bcdice (3.13.0)
+    bcdice (3.17.0)
       i18n (~> 1.8.5)
       racc (~> 1.7.3)
 
@@ -75,6 +75,7 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86-mingw32
 
 DEPENDENCIES
