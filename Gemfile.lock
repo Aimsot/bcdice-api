@@ -1,15 +1,11 @@
-PATH
-  remote: bcdice
-  specs:
-    bcdice (3.17.0)
-      i18n (~> 1.8.5)
-      racc (~> 1.7.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
     base64 (0.2.0)
+    bcdice (3.17.0)
+      i18n (~> 1.8.5)
+      racc (~> 1.7.3)
     concurrent-ruby (1.3.8)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
@@ -82,7 +78,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bcdice!
+  bcdice (~> 3.17.0)
   puma (~> 7.2)
   rack-test (~> 2.1.0)
   rackup (~> 2.1)

@@ -53,3 +53,6 @@ build-iPhoneSimulator/
 node_modules
 
 .vercel
+
+# BCDice は rubygems の公式 gem を使用（旧サブモジュールの置き場）
+/bcdice/

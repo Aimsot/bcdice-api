@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'bcdice', path: 'bcdice'
+gem 'bcdice', '~> 3.17.0'
 
 gem 'sinatra', '~>4.0'
 gem 'sinatra-contrib', '~>4.0'
