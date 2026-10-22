@@ -7,7 +7,7 @@ gem 'bcdice', path: 'bcdice'
 gem 'sinatra', '~>4.0'
 gem 'sinatra-contrib', '~>4.0'
 
-gem 'puma', '~>6.4'
+gem 'puma', '~> 7.2'
 
 group :development, :test do
   gem 'rack-test', '~>2.1.0'
