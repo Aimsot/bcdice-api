@@ -15,6 +15,10 @@ updates:
     open-pull-requests-limit: 3
     commit-message:
       prefix: chore(deps)
+    ignore:
+      # メジャーの更新は壊れやすいので、Dependabot では上げない（上げるときは手で、まとめて確かめながら）
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
     groups:
       minor-and-patch:
         update-types: ['minor', 'patch']
@@ -28,6 +32,10 @@ updates:
       timezone: Asia/Tokyo
     commit-message:
       prefix: chore(deps)
+    ignore:
+      # メジャーの更新は壊れやすいので、Dependabot では上げない（上げるときは手で、まとめて確かめながら）
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
     groups:
       actions:
         patterns: ['*']
