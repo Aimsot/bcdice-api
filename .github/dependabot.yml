@@ -1,0 +1,33 @@
+# 依存の更新を、週1回（土曜の朝）まとめて確認する
+# 更新の PR はプレビューのデプロイを作るので、Vercel の1日のデプロイ数を食わないよう、小さな更新は1つの PR にまとめる
+# メジャーの更新（壊れやすい）は、まとめずに1つずつ PR になる
+# 脆弱性の直し（Dependabot security updates）は、この週1回とは別に、見つかったときに PR が来る
+version: 2
+updates:
+  # Ruby のライブラリ（ルートの Gemfile）。bcdice/ は BCDice 本体の取り込みなので対象にしない
+  - package-ecosystem: bundler
+    directory: /
+    schedule:
+      interval: weekly
+      day: saturday
+      time: '09:00'
+      timezone: Asia/Tokyo
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: chore(deps)
+    groups:
+      minor-and-patch:
+        update-types: ['minor', 'patch']
+  # テストのワークフロー（.github/workflows/test.yml）で使う actions
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: saturday
+      time: '09:00'
+      timezone: Asia/Tokyo
+    commit-message:
+      prefix: chore(deps)
+    groups:
+      actions:
+        patterns: ['*']
